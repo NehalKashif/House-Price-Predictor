@@ -19,14 +19,14 @@ st.markdown("""
     <style>
     @media (prefers-color-scheme: dark) {
         [data-testid="stAppViewContainer"] {
-            background-color: #1a1a1a;
+            background-color: #000000;
         }
         [data-testid="stHeader"] {
-            background-color: #1a1a1a;
+            background-color: #000000;
         }
         .main {
             padding-top: 0rem;
-            background-color: #1a1a1a;
+            background-color: #000000;
         }
         [data-testid="metric-container"] {
             background-color: #90EE90;
