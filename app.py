@@ -17,32 +17,60 @@ st.set_page_config(
 # Custom CSS
 st.markdown("""
     <style>
-    [data-testid="stAppViewContainer"] {
-        background-color: #1a1a1a;
+    @media (prefers-color-scheme: dark) {
+        [data-testid="stAppViewContainer"] {
+            background-color: #1a1a1a;
+        }
+        [data-testid="stHeader"] {
+            background-color: #1a1a1a;
+        }
+        .main {
+            padding-top: 0rem;
+            background-color: #1a1a1a;
+        }
+        [data-testid="metric-container"] {
+            background-color: #90EE90;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #228B22;
+        }
+        [data-testid="metric-container"] label {
+            color: #000 !important;
+        }
+        [data-testid="metric-container"] div {
+            color: #000 !important;
+        }
     }
-    [data-testid="stHeader"] {
-        background-color: #1a1a1a;
+    
+    @media (prefers-color-scheme: light) {
+        [data-testid="stAppViewContainer"] {
+            background-color: #ffffff;
+        }
+        [data-testid="stHeader"] {
+            background-color: #ffffff;
+        }
+        .main {
+            padding-top: 0rem;
+            background-color: #ffffff;
+        }
+        [data-testid="metric-container"] {
+            background-color: #90EE90;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #228B22;
+        }
+        [data-testid="metric-container"] label {
+            color: #000 !important;
+        }
+        [data-testid="metric-container"] div {
+            color: #000 !important;
+        }
     }
-    .main {
-        padding-top: 0rem;
-        background-color: #1a1a1a;
-    }
+    
     .stMetric {
         background-color: #44ab41;
         padding: 10px;
         border-radius: 10px;
-    }
-    [data-testid="metric-container"] {
-        background-color: #90EE90;
-        padding: 20px;
-        border-radius: 10px;
-        border-left: 5px solid #228B22;
-    }
-    [data-testid="metric-container"] label {
-        color: #000 !important;
-    }
-    [data-testid="metric-container"] div {
-        color: #000 !important;
     }
     </style>
     """, unsafe_allow_html=True)
